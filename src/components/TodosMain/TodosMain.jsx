@@ -19,7 +19,8 @@ import {
     PopoverBody,
     PopoverArrow,
     Select,
-    useToast
+    useToast,
+    Skeleton
 } from '@chakra-ui/react'
 
 
@@ -33,20 +34,20 @@ import menuIconDark from "../../assets/three-dot-dark.svg";
 
 
 
-export default function TodosMain({ 
-    isOpen, 
-    setIsOpen, 
-    onClose, 
-    todoNameRef, 
-    todoDescriptionRef, 
-    handleSubmitTodo, 
-    todos, 
-    setTodos, 
-    isEdit, 
+export default function TodosMain({
+    isOpen,
+    setIsOpen,
+    onClose,
+    todoNameRef,
+    todoDescriptionRef,
+    handleSubmitTodo,
+    todos,
+    setTodos,
+    isEdit,
     setIsEdit,
     activeTodo,
     setActiveTodo
- }) {
+}) {
 
     const [todoCopies, setTodoCopies] = useState(todos)
 
@@ -95,11 +96,10 @@ export default function TodosMain({
 
     //Function to Edit the Todos
     const handleEdit = (actTodo) => {
-        setActiveTodo(actTodo)
-        setIsOpen(true)
-        setIsEdit(true)
+        setActiveTodo(actTodo);
+        setIsOpen(true);
+        setIsEdit(true);
     }
-
 
 
     return (
@@ -146,7 +146,7 @@ export default function TodosMain({
 
                                 </div>
 
-                                
+
                                 <CardBody>
                                     <Stack divider={<StackDivider />} spacing='4'>
 
@@ -161,7 +161,7 @@ export default function TodosMain({
                                                 </Text>
                                             </Tooltip>
                                         </Box>
-                                        
+
                                         {/* Todo Status Update */}
                                         <Box>
                                             <Heading size='xs' textTransform='uppercase'>
