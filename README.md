@@ -1,8 +1,10 @@
-# React + Vite
+# React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+👨‍💻 This project consists of CRUD operation along with filter using react js. User can create, update, delete, read the todo items, update the status (ie. Completed and Not Completed) and also able to filter the todos
 
-Currently, two official plugins are available:
+***☀️ 🌙 Added the dark and light theme feature***
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+***Created using:***  React.js, Chakra UI, Tailwind CSS
+
+***Please find the deployed url below***<br>
+https://react-todo-demo.netlify.app
