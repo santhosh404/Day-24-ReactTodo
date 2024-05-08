@@ -101,7 +101,6 @@ export default function TodosMain({
         setIsEdit(true);
     }
 
-
     return (
         <>
 
@@ -119,7 +118,7 @@ export default function TodosMain({
                     todoCopies.length === 0 ? "No Records Exists" :
 
                         todoCopies.map((todo, index) => (
-                            <Card key={index} h={"auto"}>
+                            <Card key={index} h={"auto"} style={{ borderRadius: '20px', padding: '20px' }}>
                                 <div className='flex justify-between items-center'>
                                     {/* Todo Heading */}
                                     <CardHeader>
